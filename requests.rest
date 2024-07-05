@@ -1,0 +1,23 @@
+GET http://localhost:5356/posts
+Authorization: Bearer
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQXlhbiIsImlhdCI6MTcyMDA2ODQ5MH0.M1lZgLKVq90gVkECdjNsHfdH96VbUouJL7FV0O1Or-Y
+###
+POST http://localhost:6356/token
+Content-Type: application/json
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYXJpdHJhIiwiaWF0IjoxNzIwMDY5NTQ1fQ.8tBNNrt98gfXrIP1pA23a-pFrrlDxSOXiQqQ6D47N0Y"
+}
+###
+DELETE http://localhost:6356/logout
+Content-Type: application/json
+{
+    "logout": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYXJpdHJhIiwiaWF0IjoxNzIwMDY5NTQ1fQ.8tBNNrt98gfXrIP1pA23a-pFrrlDxSOXiQqQ6D47N0Y"
+}
+
+###
+POST http://localhost:6356/login
+Content-Type: application/json
+
+{
+    "username": "aritra"
+}
